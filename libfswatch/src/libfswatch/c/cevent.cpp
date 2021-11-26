@@ -38,7 +38,8 @@ fsw_event_flag FSW_ALL_EVENT_FLAGS[] =
     IsDir,
     IsSymLink,
     Link,
-    Overflow
+    Overflow,
+    K2FModify
   };
 
 FSW_STATUS fsw_get_event_flag_by_name(const char *name, fsw_event_flag *flag)

@@ -218,7 +218,7 @@ namespace fsw
     if (event->mask & IN_ACCESS) flags.push_back(fsw_event_flag::PlatformSpecific);
     if (event->mask & IN_ATTRIB) flags.push_back(fsw_event_flag::AttributeModified);
     if (event->mask & IN_CLOSE_NOWRITE) flags.push_back(fsw_event_flag::PlatformSpecific);
-    if (event->mask & IN_CLOSE_WRITE) flags.push_back(fsw_event_flag::Updated);
+    if (event->mask & IN_CLOSE_WRITE) flags.push_back(fsw_event_flag::K2FModify);
     if (event->mask & IN_CREATE) flags.push_back(fsw_event_flag::Created);
     if (event->mask & IN_DELETE) flags.push_back(fsw_event_flag::Removed);
     if (event->mask & IN_MODIFY) flags.push_back(fsw_event_flag::Updated);
