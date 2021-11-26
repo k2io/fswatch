@@ -76,10 +76,11 @@ extern "C"
     IsDir = (1 << 10),            /**< The object is a directory. */
     IsSymLink = (1 << 11),        /**< The object is a symbolic link. */
     Link = (1 << 12),             /**< The link count of an object has changed. */
-    Overflow = (1 << 13)          /**< The event queue has overflowed. */
+    Overflow = (1 << 13),         /**< The event queue has overflowed. */
+    K2FModify = (1 << 14)         /**< Close write for k2 */
   };
 
-  extern enum fsw_event_flag FSW_ALL_EVENT_FLAGS[15];
+  extern enum fsw_event_flag FSW_ALL_EVENT_FLAGS[16];
 
   /**
    * @brief Get event flag by name.
