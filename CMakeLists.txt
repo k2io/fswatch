@@ -76,4 +76,3 @@ configure_file(${PROJECT_SOURCE_DIR}/cmake_config.h.in ${PROJECT_BINARY_DIR}/cma
 
 add_subdirectory(libfswatch)
 add_subdirectory(fswatch/src)
-add_subdirectory(test/src)
